@@ -45,6 +45,7 @@ Performance Rating
 
 
 **📸 Dashboard Preview**
+
 <img width="488" alt="png4" src="https://github.com/user-attachments/assets/68d9e7aa-ef36-461a-b137-2bdac20ef1ab">
 
 **🚀 How to Use**
@@ -60,8 +61,8 @@ Incorporate more advanced visualizations with D3.js or Tableau.
 **🤝 Connect with Me**
 If you have any questions or feedback, feel free to reach out:
 
-[LinkedIn]([url](https://www.linkedin.com/in/aishanazeer96/))
-[GitHub]([url](https://github.com/aishanazeer96))
+[LinkedIn]([url(https://www.linkedin.com/in/aishanazeer96/)])
+[GitHub]([url(https://github.com/aishanazeer96)])
 
 
 
