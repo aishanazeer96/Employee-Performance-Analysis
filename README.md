@@ -26,7 +26,7 @@ The goal of this project is to analyze employee performance and identify key fac
 Data Cleaning:**
 Removed duplicates and null values.
 Standardized data formats (e.g., date, text).
-Data Transformation:
+Data Transformation: 
 Joined multiple tables to create a unified dataset.
 Created calculated fields such as average performance score and absenteeism rates.
 
@@ -50,7 +50,7 @@ Performance Rating
 
 **🚀 How to Use**
 Download or clone this repository.
-Access the Looker Studio Dashboard [Add link if hosted].
+Access the Looker Studio Dashboard https://lookerstudio.google.com/s/pYcBkjVrfZM
 Explore the dashboard using the interactive filters to gain insights into employee performance.
 
 **📄 Future Improvements**
