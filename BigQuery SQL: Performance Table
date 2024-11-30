@@ -1,0 +1,31 @@
+Biqquery Link: https://console.cloud.google.com/bigquery?sq=960817125883:3c89035c10bb4d7c8600bee1a4c5f312
+
+-- Performance Rating & Rating Level & Satisfaction Level Table 
+CREATE TABLE `employees-performance-analysis.Data.table2` AS
+SELECT
+EmployeeID, 
+PerformanceID, 
+ReviewDate, 
+E5.SatisfactionLevel AS EnvironmentSatisfaction, 
+E6.SatisfactionLevel AS JobSatisfaction, 
+E7.SatisfactionLevel AS RelationshipSatisfaction, 
+TrainingOpportunitiesWithinYear, 
+TrainingOpportunitiesTaken, 
+WorkLifeBalance, 
+E3.RatingLevel AS SelfRating, 
+E4.RatingLevel AS ManagerRating
+FROM `employees-performance-analysis.Data.Performance`E2
+JOIN `employees-performance-analysis.Data.Rating`E3
+ON E2.SelfRating = E3.RatingID
+
+JOIN `employees-performance-analysis.Data.Rating`E4
+ON E2.ManagerRating = E4.RatingID
+
+JOIN `employees-performance-analysis.Data.Satisfied Level`E5
+ON E2.EnvironmentSatisfaction = E5.SatisfactionID
+
+JOIN `employees-performance-analysis.Data.Satisfied Level`E6
+ON E2.JobSatisfaction = E6.SatisfactionID
+
+JOIN `employees-performance-analysis.Data.Satisfied Level`E7
+ON E2.RelationshipSatisfaction = E7.SatisfactionID;
