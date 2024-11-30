@@ -1,0 +1,60 @@
+Bigquery link: https://console.cloud.google.com/bigquery?sq=960817125883:83bd7e564f5143ff96f4f52956e371e9
+
+
+--identifying and deleting duplicate and null values --
+--identifying null values in table 1
+SELECT *
+FROM `employees-performance-analysis.Data.table1`
+where EmployeeID is null
+or Gender is null
+or Employee_Name is null
+or BusinessTravel is null
+or Department is null
+or `DistanceFromHome KM`is null
+or Ethnicity is null
+or EducationField is null
+or JobRole is null
+or MaritalStatus is null
+or StockOptionLevel is null
+or OverTime is null
+or HireDate is null
+or Attrition is null
+or YearsAtCompany is null
+or YearsInMostRecentRole is null
+or YearsSinceLastPromotion is null
+or YearsWithCurrManager is null
+or AGE is null
+or Age_Group is null
+or Full_State_Name is null 
+or Salary is null
+or Salary_Bin is null
+or EducationLevel is null;
+
+--Identifying duplicate values in table 1
+Select EmployeeID,
+count(*) as total
+from `employees-performance-analysis.Data.table1`
+group by EmployeeID
+Having count(*) >1;
+
+--identifying null values in table 2
+SELECT *
+FROM `employees-performance-analysis.Data.table2`
+where EmployeeID is null
+or PerformanceID is null
+or ReviewDate is null
+or EnvironmentSatisfaction is null
+or JobSatisfaction is null
+or RelationshipSatisfaction is null
+or TrainingOpportunitiesWithinYear is null
+or TrainingOpportunitiesTaken is null
+or WorkLifeBalance is null
+or SelfRating is null
+or ManagerRating is null ;
+
+--Identifying duplicate values in table 2
+Select EmployeeID,
+count(*) as Total
+from `employees-performance-analysis.Data.table2`
+group by EmployeeID
+Having count(*) >1;
