@@ -62,8 +62,6 @@ Incorporate more advanced visualizations with D3.js or Tableau.
 If you have any questions or feedback, feel free to reach out:
 
 LinkedIn: https://www.linkedin.com/in/aishanazeer96/
-[GitHub]([url(https://github.com/aishanazeer96)])
-
 
 
 
